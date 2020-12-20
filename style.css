@@ -1,0 +1,145 @@
+* {
+    scroll-behavior: smooth !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    font-family: sans-serif;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    max-width: 1400px;
+}
+
+#navbar {
+    box-sizing: border-box;
+    min-width: 300px;
+    width: 350px;
+    height: 100%;
+    margin-right: 2rem;
+    line-height: 2rem;
+    position: fixed;
+}
+
+#navbar ul {
+    padding-inline-start: 0px;
+}
+
+#navbar li {
+    list-style: none;
+    border-top: 2px solid black;
+    height: auto;
+    line-height: 4.5;
+    padding-left: 2.5rem;
+}
+
+#navbar header {
+    font-size: 24px;
+    padding-left: 2.5rem;
+    margin-top: 1rem;
+    color: #7f8c8d;
+}
+
+#navbar a {
+    width: 100%;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 5rem;
+    padding: 30px 10px;
+    color: #7f8c8d;
+}
+
+#main-doc {
+    max-width: 1300px;
+    margin-left: 350px;
+    border-left: 2px solid black;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    line-height: 2.5;
+}
+
+.main-section header {
+    padding-top: 1rem;
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.main-section p {
+    font-size: 1.125rem;
+    font-weight: 300;
+    padding-bottom: 2.5rem;
+}
+
+.main-section li {
+    font-size: 1.125rem;
+}
+
+.main-section code {
+    display: block;
+    background-color: #f7f7f7;
+    font-size: 1.125rem;
+    font-weight: 500;
+}
+
+.main-section a {
+    color: #7f8c8d;
+}
+
+@media (max-width: 1350px) {
+    #main-doc {
+        max-width: 700px;
+    }
+}
+
+@media (max-width: 1150px) {
+    #navbar {
+        min-width: 150px;
+        width: 250px;
+    }
+    #navbar a {
+        font-size: 14px;
+    }
+    #main-doc {
+        margin-left: 250px;
+        max-width: 600px;
+    }
+}
+
+@media (max-width: 768px) {
+    #navbar {
+        width: 150px;
+    }
+    #navbar header {
+        font-size: 18px;
+        padding-left: 1rem;
+    }
+    #navbar li {
+        padding-left: 1rem;
+        line-height: 3;
+    }
+    #navbar a {
+        margin-top: 0;
+        padding: 15px 0px;
+    }
+    #main-doc {
+        margin-left: 150px;
+        max-width: 450px;
+    }
+}
+
+@media (max-width: 425px) {
+    #navbar header {
+        font-size: 18px;
+        padding-left: 1rem;
+    }
+    #navbar li {
+        padding-left: 1rem;
+        line-height: 2.5;
+    }
+    #navbar a {
+        margin-top: 0;
+        padding: 15px 0px;
+    }
+}
